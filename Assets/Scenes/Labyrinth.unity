@@ -455,6 +455,8 @@ MonoBehaviour:
   prefabWaypoint: {fileID: 4628662164570148421, guid: 9ff2efc144d6509408daad04ca01427d, type: 3}
   goalMat: {fileID: 2100000, guid: d6e015e897775d147a4d5b007e867025, type: 2}
   wallMat: {fileID: 2100000, guid: 6e0a807f6217b41479421706fff94a26, type: 2}
+  speed: 8
+  rotSpeed: 8
 --- !u!1 &858597776
 GameObject:
   m_ObjectHideFlags: 0

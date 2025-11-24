@@ -85,7 +85,7 @@ public class GridWaypoints : MonoBehaviour
     
     // Velocidade de movemento en unidades por segundo
     // Controla a rapidez do desprazamento entre waypoints
-    float speed = 4.0f;
+    [SerializeField] float speed = 4.0f;
     
     // Distancia mínima para considerar alcanzado un waypoint
     // Valores menores = maior precisión, valores maiores = movemento máis fluido
@@ -93,7 +93,7 @@ public class GridWaypoints : MonoBehaviour
     
     // Velocidade de rotación cara ao obxectivo
     // Controla a rapidez de xirado cara á nova dirección
-    float rotSpeed = 4f;
+     [SerializeField] float rotSpeed = 4f;
     
     // Distancia entre nodos na grella (escala visual)
     // Determina o tamaño físico da grella no mundo 3D
@@ -393,7 +393,7 @@ public class GridWaypoints : MonoBehaviour
     void SetupStartAndEndNodes()
     {
         startNode = grid[0, 0];     // Esquina superior esquerda
-        endNode = grid[6, 5];       // Esquina inferior dereita
+        endNode = grid[1, 4];       // Esquina inferior dereita
         
         // Garantir que inicio e destino sexan sempre accesibles
         startNode.Walkable = true;
